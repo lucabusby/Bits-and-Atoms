@@ -1,0 +1,71 @@
+::selection {
+  color: white;
+  background: #041e3d;
+}
+
+.item-card-container:hover {
+  background-color: #e0eeff;
+  margin: 35px auto 0 auto;
+  transition: 0.7s;
+}
+
+.item-card-container {
+  transition: 0.3s;
+  display: grid;
+  padding: 30px;
+  margin: 40px auto 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  text-align: center;
+  background-color: white;
+  width: 300px;
+  height: 540px;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 15px;
+  font-family: Helvetica;
+  font-weight: 100;
+  box-shadow: 2px 7px 30px rgb(0, 0, 0, 0.4);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  justify-items: center;
+  border-radius: 15px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 4;
+}
+
+.vector {
+  pointer-events: none;
+  position: relative;
+  width: 70%;
+  height: auto;
+  margin: 50px;
+  justify-self: center;
+}
+
+.card-information {
+  justify-self: center;
+  justify-items: center;
+  padding: 10px 20px 30px 20px;
+  grid-column: 1 / 4;
+  grid-row: 3;
+  border-radius: 15px;
+  background-color: #e0eeff;
+}
+.card-information .card-title {
+  color: #041e3d;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card-information p {
+  text-align: left;
+  color: #041e3d;
+}

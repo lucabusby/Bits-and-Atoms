@@ -1,3 +1,16 @@
 .headerNice {
   color: aqua;
 }
+.card-item {
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column left;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+  width: 300px;
+  height: 540px;
+}
