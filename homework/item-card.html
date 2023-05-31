@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="item-card.css" />
+    <script src="animations.js" defer></script>
   </head>
   <body>
     <div class="item-card-container">
       <div class="card-image">
         <img class="vector" src="zipper.svg" />
       </div>
-      <div class="card-information">
+      <div class="card-information" id="changeColor">
         <h1 class="card-title">Zipper</h1>
         <p>
           Look at this zipper. it can zip so good. zip your files here to win a
@@ -20,6 +21,17 @@
           zipper zip zap!
         </p>
       </div>
+      <button class="progress-container" id="bar">
+        <div class="progress-bar" id="progressBar"></div>
+      </button>
+      <p class="download" id="downloadText">Download</p>
+    </div>
+    <div class="changeWrapper">
+      <p class="textColor" for="colorInput">
+        Change the color of your zipper by typing the color
+      </p>
+      <input class="inputField" type="text" id="colorInput" />
+      <button class="clickButton" onclick="changeColor()">Change Color</button>
     </div>
   </body>
 </html>

@@ -15,7 +15,7 @@
   padding: 30px;
   margin: 40px auto 0 auto;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 10px;
   text-align: center;
   background-color: white;
@@ -30,6 +30,10 @@
   box-shadow: 2px 7px 30px rgb(0, 0, 0, 0.4);
 }
 
+.item-card-container.spin {
+  transform: rotateY(360deg);
+}
+
 .card-image {
   width: 100%;
   height: auto;
@@ -37,7 +41,7 @@
   justify-items: center;
   border-radius: 15px;
   grid-column: 1 / 4;
-  grid-row: 1 / 4;
+  grid-row: 1 / 3;
 }
 
 .vector {
@@ -52,12 +56,13 @@
 .card-information {
   justify-self: center;
   justify-items: center;
-  padding: 10px 20px 30px 20px;
+  padding: 10px 10px 30px 20px;
   grid-column: 1 / 4;
   grid-row: 3;
   border-radius: 15px;
   background-color: #e0eeff;
 }
+
 .card-information .card-title {
   color: #041e3d;
   text-align: center;
@@ -68,4 +73,62 @@
 .card-information p {
   text-align: left;
   color: #041e3d;
+}
+
+.progress-container {
+  grid-column: 1 / 4;
+  grid-row: 4;
+  width: 100%;
+  height: auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  margin: -10px 0px 0px -10px;
+  width: 0px;
+  height: 150%;
+  background-color: #4287f5;
+  transition: 1s;
+}
+
+.download {
+  grid-column: 1 / 4;
+  grid-row: 4;
+  pointer-events: none;
+}
+
+.changeWrapper {
+  overflow: hidden;
+  display: grid;
+  margin: 100px auto 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  font-family: Helvetica;
+  font-weight: 100;
+}
+
+.textColor {
+  align-self: center;
+  justify-self: center;
+  grid-row: 1;
+}
+
+.inputField {
+  align-self: center;
+  justify-self: center;
+  grid-row: 2;
+  padding: 0px 10px 0px 10px;
+  border-radius: 15px;
+  height: 20px;
+}
+
+.clickButton {
+  align-self: center;
+  justify-self: center;
+  grid-row: 3;
+  border-radius: 15px;
+  padding: 10px 20px 10px 20px;
+  background-color: white;
 }
