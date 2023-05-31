@@ -14,7 +14,8 @@ setTimeout(function() {
   widthDiv.style.width = "0px";
 
   var textParagraph = document.getElementById("downloadText");
-  textParagraph.textContent = "Thanks";
+  textParagraph.textContent = "Thanks:)";
+  alert("ege now jas control");
 }, 3000);
 
 function changeColor() {
