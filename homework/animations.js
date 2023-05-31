@@ -1,11 +1,9 @@
-
 document.getElementById("bar").addEventListener("click", function() {
   var widthDiv = document.getElementById("progressBar");
   widthDiv.style.width = "300px";
 
   var textParagraph = document.getElementById("downloadText");
   textParagraph.textContent = "Eges Virus Downloaded";
-  setTimeout();
   setTimeout();
 });
 
@@ -15,7 +13,7 @@ setTimeout(function() {
 
   var textParagraph = document.getElementById("downloadText");
   textParagraph.textContent = "Thanks:)";
-  alert("ege now jas control");
+  alert("ege now is in control");
 }, 3000);
 
 function changeColor() {
